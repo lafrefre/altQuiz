@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <title>altQuiz</title>
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <h1>alt Quiz</h1>
+        <button id="start-btn">Start Quiz</button>
+        <form id="qz-form">
+            <p id="question"></p>
+            <label><input type="radio" name="answer" value="a"> Option A</label>
+            <label><input type="radio" name="answer" value="b"> Option B</label>
+            <label><input type="radio" name="answer" value="c"> Option C</label>        
+            <label><input type="radio" name="answer" value="d"> Option D</label>
+        </form>
+        <div id="score">Score:<span>0</span></div>
+        <div class="high-score-form">
+            <h2>Enter your name to save your score</h2>
+            <input type="text" id="name-input">
+            <button id="submit-btn">Submit</button>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
