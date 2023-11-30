@@ -2,27 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tech Quiz</title>
     <link rel="stylesheet" href="style.css">
-    <title>altQuiz</title>
 </head>
 <body>
-    <div class="quiz-container" id="quiz">
-        <h1>alt Quiz</h1>
-        <button id="start-btn">Start Quiz</button>
-        <form id="qz-form">
-            <p id="question"></p>
-            <label><input type="radio" name="answer" value="a"> Option A</label>
-            <label><input type="radio" name="answer" value="b"> Option B</label>
-            <label><input type="radio" name="answer" value="c"> Option C</label>        
-            <label><input type="radio" name="answer" value="d"> Option D</label>
-        </form>
-        <div id="score">Score:<span>0</span></div>
-        <div class="high-score-form">
-            <h2>Enter your name to save your score</h2>
-            <input type="text" id="name-input">
-            <button id="submit-btn">Submit</button>
+    <div class="quiz-container">
+        <div id="quiz-start">
+            <h1>Tech Quiz</h1>
+            <button id="start-btn">Start Quiz</button>
         </div>
-        <script src="script.js"></script>
+        <div id="quiz-questions" style="display: none;">
+            <h1 id="question-title">Question</h1>
+            <div id="question-container">
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
+            <button id="next-btn">Next Question</button>
+        </div>
+        <div id="timer">
+            Time remaining: <span id="time-remaining">60</span> seconds
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
